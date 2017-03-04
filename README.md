@@ -1,2 +1,2 @@
 # mysqlx
-go mysqlx  drive
+MySQL Connector/Golang X DevAPI 

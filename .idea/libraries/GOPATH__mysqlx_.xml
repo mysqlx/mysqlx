@@ -1,0 +1,47 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;mysqlx&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../leafserver" />
+      <root url="file://$PROJECT_DIR$/../../BeatEvoYGFamilyConfigServer" />
+      <root url="file://$PROJECT_DIR$/../../ygfamily-config" />
+      <root url="file://$PROJECT_DIR$/../../ygfamily-server-docs" />
+      <root url="file://$PROJECT_DIR$/../../BeatEvoYGFamilyServer" />
+      <root url="file://$PROJECT_DIR$/../../nakama" />
+      <root url="file://$PROJECT_DIR$/../../BeatTest" />
+      <root url="file://$PROJECT_DIR$/../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/.." />
+      <root url="file://$PROJECT_DIR$/../../github.com" />
+      <root url="file://$PROJECT_DIR$/../../game" />
+      <root url="file://$PROJECT_DIR$/../../agent" />
+      <root url="file://$PROJECT_DIR$/../../agent2" />
+      <root url="file://$PROJECT_DIR$/../../google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../starx-demo-server" />
+      <root url="file://$PROJECT_DIR$/../../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../BeatRobot" />
+      <root url="file://$PROJECT_DIR$/../../server" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../leafserver" />
+      <root url="file://$PROJECT_DIR$/../../BeatEvoYGFamilyConfigServer" />
+      <root url="file://$PROJECT_DIR$/../../ygfamily-config" />
+      <root url="file://$PROJECT_DIR$/../../ygfamily-server-docs" />
+      <root url="file://$PROJECT_DIR$/../../BeatEvoYGFamilyServer" />
+      <root url="file://$PROJECT_DIR$/../../nakama" />
+      <root url="file://$PROJECT_DIR$/../../BeatTest" />
+      <root url="file://$PROJECT_DIR$/../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/.." />
+      <root url="file://$PROJECT_DIR$/../../github.com" />
+      <root url="file://$PROJECT_DIR$/../../game" />
+      <root url="file://$PROJECT_DIR$/../../agent" />
+      <root url="file://$PROJECT_DIR$/../../agent2" />
+      <root url="file://$PROJECT_DIR$/../../google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../starx-demo-server" />
+      <root url="file://$PROJECT_DIR$/../../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../BeatRobot" />
+      <root url="file://$PROJECT_DIR$/../../server" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
