@@ -1,15 +1,15 @@
 package mysqlx
 
-type sql struct {
+type _sql struct {
 	
 }
 
-func (this *sql)Execute() Result {
-	return Result{}
+func (this *_sql)Execute() SqlResult {
+	return SqlResult{}
 }
 
 
-func (this *sql)Bind(...interface{}) *sql {
+func (this *_sql)Bind(...interface{}) *_sql {
 	return this
 }
 

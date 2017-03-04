@@ -44,8 +44,8 @@ type RowResult struct {
 	BaseResult
 }
 
-func (this *RowResult)FetchOne()  {
-	
+func (this *RowResult)FetchOne() Row  {
+	return Row{}
 }
 
 func (this *RowResult)FetchAll()  {

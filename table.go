@@ -8,8 +8,8 @@ func (this *Table)Insert()  {
 
 }
 
-func (this *Table)Select() table {
-
+func (this *Table)Select() _table {
+	return _table{}
 }
 
 func (this *Table)Delete()  {

@@ -6,8 +6,8 @@ type Collection struct {
 func (this *Collection) Add() {
 
 }
-func (this *Collection) Find() {
-
+func (this *Collection) Find(find string) *_collection {
+	return &_collection{}
 }
 
 func (this *Collection) Modify() {

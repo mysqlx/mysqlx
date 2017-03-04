@@ -1,5 +1,7 @@
 package mysqlx
 
+import "fmt"
+
 type Mysqlx struct {
 }
 
@@ -12,11 +14,22 @@ type SessionSettings struct {
 }
 
 
-func  GetSession(config SessionSettings)(BaseSession,error ) {
-	return BaseSession{},nil
+//interface Stringer
+func (this *SessionSettings)String() string {
+	return fmt.Sprintf("%s:%s@%s:%i",
+		this.DbUser,
+		this.DbPassword,
+		this.Host,
+		this.Port,
+	)
 }
 
-func  GetSessionByURL(url string) (BaseSession,error ) {
+
+func  GetSession(config SessionSettings)(*XSession,error ) {
+	return &XSession{},nil
+}
+
+func  GetSessionByURL(url string) (*XSession,error ) {
 	msqlxConfig,err:= parseURL(url)
 	if err!=nil {
 		return nil,err
@@ -25,11 +38,11 @@ func  GetSessionByURL(url string) (BaseSession,error ) {
 }
 
 
-func  GetNodeSession(config SessionSettings) (NodeSession,error) {
-	return NodeSession{},nil
+func  GetNodeSession(config SessionSettings) (*NodeSession,error) {
+	return &NodeSession{},nil
 }
 
-func  GetNodeSessionByURL(url string) (NodeSession,error) {
+func  GetNodeSessionByURL(url string) (*NodeSession,error) {
 	msqlxConfig,err:= parseURL(url)
 	if err!=nil {
 		return nil,err

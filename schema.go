@@ -4,6 +4,10 @@ type Schema struct {
 	Database
 	
 }
+//Return schema name
+func (this *Schema)String() string {
+	return  "schema name"
+}
 
 func (this *Schema)GetCollection(collectionName string)Collection  {
 	return Collection{}
