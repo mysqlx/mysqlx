@@ -10,7 +10,7 @@ func (this *BaseSession) GetSchemas() []Schema {
 	return []Schema{}
 }
 
-func (this *BaseSession) GetSchema(schemaName string ) Schema {
+func (this *BaseSession) GetSchema(schemaName string) Schema {
 	return Schema{}
 }
 
@@ -48,16 +48,14 @@ type XSession struct {
 
 type NodeSession struct {
 	BaseSession
-	schema *Schema
+	schema  *Schema
 	rwMutex sync.RWMutex
-
 }
 
 // Switch to use schema By schema name
-func (this *NodeSession)ExecuteSql(schemaName string)  {
+func (this *NodeSession) ExecuteSql(schemaName string) {
 
 }
-
 
 //
 func (this *NodeSession) Sql(sql string) *_sql {
@@ -69,11 +67,11 @@ func (this *NodeSession) QuoteName() string {
 }
 
 //setCurrentSchema
-func (this *NodeSession) SetCurrentSchema(schemaName string)  (schema *Schema)  {
+func (this *NodeSession) SetCurrentSchema(schemaName string) (schema *Schema) {
 
 	this.rwMutex.Lock()
 	//set
-	this.schema= &Schema{}
+	this.schema = &Schema{}
 	this.rwMutex.Unlock()
 
 	//read
@@ -86,6 +84,5 @@ func (this *NodeSession) SetCurrentSchema(schemaName string)  (schema *Schema)  
 
 //get defaultSchema name
 func (this *NodeSession) GetDefaultSchemaName() string {
-	return  this.schema.String()
+	return this.schema.String()
 }
-

@@ -1,4 +1,5 @@
 package util
+
 //Supported password encryptions are:
 //
 //MYSQL 4.1

@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	//connect to server on localhost
 	mySession, err := mysqlx.GetNodeSession(mysqlx.SessionSettings{
 		Host:       "127.0.0.1",
 		Port:       33060,
@@ -20,5 +19,12 @@ func main() {
 
 	defer mySession.Close()
 
-	mySession.SetCurrentSchema("test")
+	myDb := mySession.GetSchema("test")
+
+	myColl := myDb.GetCollection("test")
+
+	res := myColl.Add("{\"_id\":\"custom_id\",\"a\":1}").Execute()
+
+	println(res.GetLastInsertId())
+
 }

@@ -5,16 +5,16 @@ import (
 	"log"
 )
 
-func main()  {
+func main() {
 	//connect to server on localhost
-	mySession,err := mysqlx.GetNodeSession(mysqlx.SessionSettings{
-		Host:"127.0.0.1",
-		Port:33060,
-		DbUser:"wsc",
-		DbPassword:"ooxx",
+	mySession, err := mysqlx.GetNodeSession(mysqlx.SessionSettings{
+		Host:       "127.0.0.1",
+		Port:       33060,
+		DbUser:     "wsc",
+		DbPassword: "ooxx",
 	})
 
-	if err!=nil {
+	if err != nil {
 		log.Fatal(err)
 	}
 
@@ -22,7 +22,6 @@ func main()  {
 
 	// Switch to use schema 'test'
 	mySession.ExecuteSql("test")
-
 
 	// In a NodeSession context the full SQL language can be used
 	mySession.Sql("CREATE PROCEDURE my_add_one_procedure " +
@@ -38,7 +37,6 @@ func main()  {
 	mySession.Sql("CALL my_add_one_procedure(@my_var)").Execute()
 
 	mySession.Sql("DROP PROCEDURE my_add_one_procedure").Execute()
-
 
 	// return SqlResult
 	myResult := mySession.Sql("SELECT @my_var").Execute()

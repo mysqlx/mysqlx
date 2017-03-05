@@ -1,9 +1,8 @@
 package mysqlx
 
 type Document struct {
-
 }
 
-func (this *Document)FetchOne() string  {
-	return  "hello,world"
+func (this *Document) FetchOne() string {
+	return "hello,world"
 }

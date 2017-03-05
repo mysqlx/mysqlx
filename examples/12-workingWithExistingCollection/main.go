@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	//connect to server on localhost
 	mySession, err := mysqlx.GetNodeSession(mysqlx.SessionSettings{
 		Host:       "127.0.0.1",
 		Port:       33060,
@@ -20,5 +19,7 @@ func main() {
 
 	defer mySession.Close()
 
-	mySession.SetCurrentSchema("test")
+	myDb := mySession.GetSchema("test")
+
+	myDb.GetCollection("test")
 }
