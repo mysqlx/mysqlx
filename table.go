@@ -12,11 +12,11 @@ func (this *Table) Select(projectSearchExprStrList ...string) *_tableSelectState
 	return &_tableSelectStatement{}
 }
 
-func (this *Table) Delete(searchConditionStr string) *_tableDeleteStatement{
+func (this *Table) Delete(searchConditionStr string) *_tableDeleteStatement {
 	return &_tableDeleteStatement{}
 }
 
-func (this *Table) Update()*_tableUpdateStatement {
+func (this *Table) Update() *_tableUpdateStatement {
 	return &_tableUpdateStatement{}
 }
 

@@ -1,12 +1,21 @@
 package mysqlx
 
-type _sql struct {
+type SqlExecute struct {
 }
 
-func (this *_sql) Execute() SqlResult {
+func (this *SqlExecute) Execute() SqlResult {
 	return SqlResult{}
 }
 
-func (this *_sql) Bind(...interface{}) *_sql {
+func (this *SqlExecute) Bind(...interface{}) *SqlExecute {
 	return this
+}
+
+type SQLPlaceholderValues struct {
+}
+
+type SQLPlaceholderName struct {
+}
+
+type SQLLiteral struct {
 }

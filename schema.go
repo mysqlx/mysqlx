@@ -26,7 +26,7 @@ func (this *Schema) GetTable(tableName string) Table {
 	return Table{}
 }
 
-func (this *Schema) GetCollectionAsTable() Table {
+func (this *Schema) GetCollectionAsTable(collectionName string) Table {
 	return Table{}
 }
 
